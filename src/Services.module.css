@@ -2,6 +2,7 @@
   padding: 3rem 3rem 7rem 3rem;
   display: grid;
   place-items: center;
+  overflow-x: hidden;
 }
 .heading {
   text-align: center;

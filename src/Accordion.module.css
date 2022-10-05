@@ -3,6 +3,7 @@
   padding-bottom: 5rem;
   display: grid;
   place-items: center;
+  overflow-x: hidden;
 }
 .workerrow {
   display: flex;
