@@ -1,0 +1,144 @@
+.worker {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+  display: grid;
+  place-items: center;
+}
+.workerrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1140px;
+}
+.left {
+  padding-right: 4rem;
+  width: 50%;
+}
+.left h3 {
+  font-size: 46px;
+  font-weight: 400;
+  font-family: serif;
+  color: #414243;
+  margin-bottom: 1rem;
+}
+.leftcontent {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e8e8e8;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  color: #727272;
+  align-items: center;
+  cursor: pointer;
+}
+.collapsible {
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 28px;
+  color: #727272;
+  font-family: sans-serif;
+}
+.icon {
+  padding-right: 10px;
+  font-size: 33px;
+  color: #727272;
+  margin-bottom: -11px;
+}
+.contentshow {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  color: #727272;
+  font-weight: 400;
+  line-height: 28px;
+}
+.right {
+  border-radius: 10px;
+  overflow: hidden;
+  padding-left: 4re;
+}
+.right img {
+  width: 450px;
+  height: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .left {
+    padding-right: 3rem;
+    width: 50%;
+  }
+  .right {
+    padding-left: 3rem;
+  }
+  .right img {
+    width: 350px;
+    height: 390px;
+  }
+}
+@media screen and (max-width: 968px) {
+  .workerrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .left {
+    padding: 0;
+    width: 90%;
+  }
+  .right {
+    padding: 3rem 0 0 0;
+  }
+  .right img {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .worder {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: grid;
+    place-items: center;
+  }
+  .workerrow {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .right img {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 476px) {
+  .worderrow {
+    padding-left: 1rem;
+    padding-right: 1em;
+  }
+  .left h3 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  .right img {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 384px) {
+  .right img {
+    width: 300px;
+    height: 300px;
+  }
+  .collapsible {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 334px) {
+  .right img {
+    width: 250px;
+    height: 300px;
+  }
+}

@@ -1,0 +1,44 @@
+.counter {
+  padding: 2rem 3rem 4rem 3rem;
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.column .number {
+  font-weight: 600;
+  font-size: 50px;
+  font-family: sans-serif;
+  color: #fdae5c;
+}
+.column span {
+  display: block;
+  font-size: 18px;
+  color: rgb(0, 0, 0, 0.7);
+  line-height: 1.2;
+  padding-left: 15px;
+  font-family: sans-serif;
+}
+@media screen and (max-width: 1024px) {
+  .row {
+    grid-template-columns: 1fr 1fr;
+  }
+  .column {
+    padding: 2rem 0 2rem 0;
+  }
+}
+@media screen and (max-width: 560px) {
+  .counter {
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
