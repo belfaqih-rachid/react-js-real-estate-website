@@ -6,7 +6,7 @@ const Home = () => {
     <Fragment>
       <section className={home.home}>
         <div className={home.container}>
-          <h1>We Construct rachid</h1>
+          <h1>We Construct Dreams</h1>
           <p>
             lorem is a lorem page as lorem said to lorem orem is a lorem page as
             lorem said to lorem orem is a lorem page as lorem said to lorem
