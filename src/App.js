@@ -7,6 +7,7 @@ import Work from "./components/Work";
 import Accordion from "./components/Accordion";
 import CounterPage from "./components/CounterPage";
 import AgentPage from "./components/AgentPage";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Accordion/>
       <CounterPage/>
       <AgentPage/>
+      <Footer/>
     </div>
   );
 }

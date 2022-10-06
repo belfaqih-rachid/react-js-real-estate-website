@@ -1,6 +1,6 @@
-nav>* {
+nav > * {
   transition: all 1s ease-in-out;
-} 
+}
 nav {
   position: absolute;
   left: 0;
@@ -59,7 +59,23 @@ nav h1 span {
   color: #fdae5c;
 }
 
+.active {
+  position: fixed;
+  width: 100%;
+  top: -70px;
+  left: 0;
+  right: 0;
+  z-index: 990;
+  box-shadow: 0 3px 16px 0 rgb(0, 0, 0 /10%);
+  background-color: #2c2a2f;
+  transform: translateY(70px);
+  transition: transform 1s ease;
+}
+
 @media screen and (max-width: 927px) {
+  .active {
+    display: none;
+  }
   nav {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -111,17 +127,16 @@ nav h1 span {
   }
   .btn {
     padding-left: 3rem;
-    border:none;
+    border: none;
     background: transparent;
   }
 }
-@media  screen and (max-width:550px) {
-    nav{
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    .icon{
-        font-size: 1.7rem;
-    }
-    
+@media screen and (max-width: 550px) {
+  nav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .icon {
+    font-size: 1.7rem;
+  }
 }

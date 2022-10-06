@@ -2,11 +2,22 @@ import React, { Fragment, useState } from "react";
 import { HiOutlineMenu } from "react-icons/hi";
 import css from "../Navbar.module.css";
 const Navbar = () => {
-    const [menu,setMenu] = useState(false)
+  const [menu, setMenu] = useState(false);
+  const [transitionNavbar, setTransitionNavbar] = useState(false);
+  const changeBackground = () => {
+    if (window.scrollY >= 150) {
+      setTransitionNavbar(true);
+    } else {
+      setTransitionNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", changeBackground);
   return (
     <Fragment>
       <div className={css.page}>
-        <nav>
+        <nav
+          className={transitionNavbar? `${css.navbar} ${css.active}` : `${css.navbar}`}
+        >
           <h1>
             Downtown<span>.</span>
           </h1>
